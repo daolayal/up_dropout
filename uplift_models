@@ -49,9 +49,9 @@ def uplift_model(df_train,df_test,treatment,predictors,target, direction, model)
         predictions_treat = pd.DataFrame(prob_treat,testIndices, columns = {"Prob_treat"})
         predictions_ctrl = pd.DataFrame(prob_ctrl,testIndices, columns = {"Prob_ctrl"})
         predictions = pd.concat([df_test,predictions_treat,predictions_ctrl],axis = 1)
-        feature_importances = pd.DataFrame(fitted_model.feature_importances_,
-                                          index = predictors,
-                                          columns = ['importance']).sort_values('importance',ascending =False)
+        #feature_importances = pd.DataFrame(fitted_model.feature_importances_,
+                                          #index = predictors,
+                                          #columns = ['importance']).sort_values('importance',ascending =False)
         
         
     elif model == "MOARF":
@@ -146,7 +146,7 @@ def uplift_model(df_train,df_test,treatment,predictors,target, direction, model)
     elif direction == 2:
         predictions["s"] = predictions["Prob_ctrl"] - predictions["Prob_treat"]
     
-    return feature_importances;
+    return predictions;
 
 def performance_uplift(predictions,treatment,target,continuous,direction,model_name):
     
