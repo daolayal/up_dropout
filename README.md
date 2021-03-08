@@ -4,4 +4,6 @@ Uplift modeling is an approach for estimating the incremental effect of an actio
 
 Related paper:
 
-Olaya, D., Vásquez, J., Maldonado, S., Miranda, J., & Verbeke, W. (2020). Uplift Modeling for preventing student dropout in higher education. Decision Support Systems, 134, 113320.
+[Olaya, D., Vásquez, J., Maldonado, S., Miranda, J., & Verbeke, W. (2020). Uplift Modeling for preventing student dropout in higher education. Decision Support Systems, 134, 113320.](https://www.sciencedirect.com/science/article/pii/S0167923620300750).
+
+
